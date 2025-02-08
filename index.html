@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Resources Finder</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Smiling Map Pin Logo" width="100">
+        <h1>Community Resources Finder</h1>
+        <p>Find local support, help, and essential services near you.</p>
+    </header>
+
+    <main>
+        <section class="features">
+            <h2><span class="material-icons">location_on</span> Find Resources</h2>
+            <p>Locate food banks, shelters, and community centers easily.</p>
+
+            <h2><span class="material-icons">favorite</span> Community Support</h2>
+            <p>Discover volunteer opportunities and ways to give back.</p>
+
+            <h2><span class="material-icons">help_outline</span> How It Works</h2>
+            <p>Simple steps to connect with local resources fast.</p>
+        </section>
+    </main>
+
+    <div class="search-container">
+        <input type="text" id="search" placeholder="Search for resources...">
+        <select id="category-filter">
+            <option value="">Filter by category</option>
+            <option value="Food Bank">Food Bank</option>
+            <option value="Library">Library</option>
+            <option value="Clinic">Clinic</option>
+            <option value="Shelter">Shelter</option>
+            <option value="Community Services">Community Services</option>
+            <option value="Hospital">Hospital</option>
+            <option value="Youth Services">Youth Services</option>
+            <option value="Health">Health</option>
+        </select>
+        <button id="search-btn">Search</button>
+    </div>
+
+    <div id="loading-spinner" style="display: none;">
+        <img src="spinner.gif" alt="Loading...">
+    </div>
+
+    <div id="results"></div>
+
+    <div id="map"></div>  <!-- New map section -->
+
+    <footer>
+        <p>&copy; 2025 Community Resources Finder</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+    <!-- Load Google Maps API (Replace YOUR_API_KEY with a real API key) -->
+    <script async defer 
+    src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+    </script>
+
+    <footer>
+        <p>&copy; 2025 Community Resources | Helping Hands Everywhere 🤝 | Made by Aaishi Pranav</p>
+    </footer>
+</body>
+</html>
